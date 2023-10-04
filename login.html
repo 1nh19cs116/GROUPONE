@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>LOGIN PAGE</title>
+<style>
+
+.video-container video{
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+table{     width: 500px;
+           height: 300px;
+           background-color: black;
+           opacity: 0.8;
+           padding: 55px;}
+</style>
+</head>
+
+<body>
+<div class="video-container">
+<video src="loginn.mp4" id="video-slider" loop autoplay muted></video>
+</div><center>
+<form align="center" action="login.php" method="post">
+<h1 align="center" bgcolor="purple">LOGIN PAGE</h1>
+<table align="center">
+<tr><th style="color:white;font-size:25px;">Username</th> 
+<th><input type="username" class="box" name="username" placeholder="Enter your Name" size="30"></th>
+</tr>
+<tr>
+<th style="color:white;font-size:25px;">Password</th>
+<th><input type="password" class="box" name="password" placeholder="Enter your Password" size="30"></th></tr>
+<tr>
+<th style="color:white;font-size:25px;">Email</th>
+<th><input type="email" class="box" name="email" placeholder="Enter your Email ID" size="30"></th>
+</tr>
+</table> <br>
+<input type="submit" value="click me!" style=" background-color: darkgray;color: black;font-size:25px;"/>                                                                                       
+</form> 
+</body>
+</html>
